@@ -1,0 +1,38 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "zq7TtahyNViKpPqrCmRkb2WWZaE=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://trademanager.com",
+      "issuer": "trade-manager",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "sqlite": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "trade_manager_api.sqlite"
+    }
+  },
+  "nedb": "../data"
+}

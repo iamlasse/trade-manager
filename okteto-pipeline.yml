@@ -4,5 +4,5 @@ deploy:
   - okteto build -t okteto.dev/dashboard:${OKTETO_GIT_COMMIT} dashboard
   - helm upgrade --install trade-manager chart --set tag=${OKTETO_GIT_COMMIT}
 devs:
-  - trade-api/okteto.yml
+  - api/okteto.yml
   - dashboard/okteto.yml

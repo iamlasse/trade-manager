@@ -1,0 +1,9 @@
+name: api
+autocreate: true
+image: okteto/node:14
+command: bash
+sync:
+- .:/usr/src/app
+forward:
+- 9239:9239
+- 3030:3000
