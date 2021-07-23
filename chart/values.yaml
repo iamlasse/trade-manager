@@ -1,0 +1,12 @@
+tag: dev
+
+api:
+  replicaCount: 1
+  image: okteto.dev/api
+
+dashboard:
+  replicaCount: 1
+  image: okteto.dev/dashboard
+
+mongodb:
+  password: "Password!1@2"

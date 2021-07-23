@@ -1,0 +1,8 @@
+icon: https://apps.okteto.com/movies/icon.png
+deploy:
+  - okteto build -t okteto.dev/api:${OKTETO_GIT_COMMIT} api
+  - okteto build -t okteto.dev/dashboard:${OKTETO_GIT_COMMIT} dashboard
+  - helm upgrade --install trade-manager chart --set tag=${OKTETO_GIT_COMMIT}
+devs:
+  - trade-api/okteto.yml
+  - dashboard/okteto.yml

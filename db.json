@@ -1,0 +1,32 @@
+{
+  "price": {
+    "EURJPY": {
+      "symbol": "EURJPY",
+      "current": 129.477
+    },
+    "GBPAUD": {
+      "symbol": "GBPAUD",
+      "current": 1.86149
+    },
+    "USDJPY": {
+      "symbol": "USDJPY",
+      "current": 109.833
+    },
+    "USDCHF": {
+      "symbol": "USDCHF",
+      "current": 0.92260
+    },
+    "USDCAD": {
+      "symbol": "USDCAD",
+      "current": 1.27034
+    },
+    "EURUSD": {
+      "symbol": "EURUSD",
+      "current": 1.17551
+    },
+    "GBPJPY": {
+      "symbol": "GBPJPY",
+      "current": 149.789
+    }
+  }
+}
